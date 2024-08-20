@@ -18,4 +18,12 @@
 [[plugins]]
   package = "netlify-plugin-hugo-cache-resources"
   [plugins.inputs]
+  
     debug = true
+[[redirects]]
+  from = "www.alisongtebo.com"
+  to = "https://www.janelia.org/lab/tebo-lab"
+  status = 301
+  force = false
+  query = {path = ":path"}
+  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
